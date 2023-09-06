@@ -36,11 +36,13 @@ export default defineConfig({
   chainWebpack,
   proxy: {
     '/api': {
-      target: 'http://127.0.0.1:10821',
+      // target: 'http://127.0.0.1:10821',
+      target: 'http://60.204.142.133:10824',
       changeOrigin: true,
     },
     '/client/remaininguses/': {
-      target: 'http://127.0.0.1:1889',
+      // target: 'http://127.0.0.1:1889',
+      target: 'http://60.204.142.133:10824',
       changeOrigin: true,
     },
   },
