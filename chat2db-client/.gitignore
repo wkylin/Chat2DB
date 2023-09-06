@@ -8,7 +8,7 @@
 /dist
 .swc
 
-
+.yarn
 /release
 /static
 /versions

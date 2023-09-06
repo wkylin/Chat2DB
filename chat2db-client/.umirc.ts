@@ -38,11 +38,13 @@ export default defineConfig({
     '/api': {
       // target: 'http://127.0.0.1:10821',
       target: 'http://60.204.142.133:10824',
+      // target: 'https://qingyanx.com/chat2db',
       changeOrigin: true,
     },
     '/client/remaininguses/': {
       // target: 'http://127.0.0.1:1889',
       target: 'http://60.204.142.133:10824',
+      // target: 'https://qingyanx.com/chat2db',
       changeOrigin: true,
     },
   },
