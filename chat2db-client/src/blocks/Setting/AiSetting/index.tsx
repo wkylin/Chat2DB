@@ -24,7 +24,7 @@ export default function SettingAI(props: IProps) {
     setAiConfig(props.aiConfig);
   }, [props.aiConfig]);
 
-  const handleAiTypeChange = async (e) => {
+  const handleAiTypeChange = async (e: any) => {
     const aiSqlSource = e.target.value;
 
     // 查询对应ai类型的配置
@@ -54,7 +54,7 @@ export default function SettingAI(props: IProps) {
       <div className={styles.aiSqlSource}>
         <div className={styles.aiSqlSourceTitle}>{i18n('setting.title.aiSource')}:</div>
         <Radio.Group onChange={handleAiTypeChange} value={aiConfig?.aiSqlSource}>
-          <Radio value={AiSqlSourceType.CHAT2DBAI}>Chat2DB AI</Radio>
+          <Radio value={AiSqlSourceType.CHAT2DBAI}>DBchat AI</Radio>
           <Radio value={AiSqlSourceType.OPENAI}>Open AI</Radio>
           <Radio value={AiSqlSourceType.AZUREAI}>Azure AI</Radio>
           <Radio value={AiSqlSourceType.RESTAI}>{i18n('setting.tab.custom')}</Radio>

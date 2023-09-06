@@ -15,7 +15,7 @@ const chainWebpack = (config: any, { webpack }: any) => {
 };
 
 export default defineConfig({
-  title: 'Chat2DB',
+  title: 'DBchat',
   history: {
     type: 'hash',
   },

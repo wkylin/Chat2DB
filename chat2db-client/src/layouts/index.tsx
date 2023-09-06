@@ -170,12 +170,12 @@ function AppContainer() {
                   </div> */}
                 {serviceFail && (
                   <>
-                    <div className={styles.github}>
+                    {/* <div className={styles.github}>
                       {i18n('common.text.contactUs')}：
                       <a target="_blank" href="https://github.com/chat2db/Chat2DB">
                         github
                       </a>
-                    </div>
+                    </div> */}
                     <div className={styles.restart} onClick={detectionService}>
                       {i18n('common.text.tryToRestart')}
                     </div>

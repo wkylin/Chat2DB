@@ -66,7 +66,7 @@ export default memo<IProps>(function ShortcutKey(props) {
   const { className } = props;
   return <div className={classnames(styles.box, className)}>
     <div className={styles.letterpress}>
-      Chat2DB
+      DBchat
     </div>
     <div className={styles.shortcuts}>
       {

@@ -4,14 +4,14 @@ const path = require('path');
 const registerAppMenu = (mainWindow) => {
   const menuBar = [
     {
-      label: 'Chat2DB',
+      label: 'DBchat',
       submenu: [
         {
-          label: '关于Chat2DB',
+          label: '关于DBchat',
           click() {
             dialog.showMessageBox({
-              title: '关于Chat2DB',
-              message: `关于Chat2DB v${app.getVersion()}`,
+              title: '关于DBchat',
+              message: `关于DBchat v${app.getVersion()}`,
               detail:
                 // An intelligent database client and smart BI reporting tool with integrated AI capabilities.
                 '一个集成AI能力的智能数据库客户端和智能BI报表工具。',
@@ -98,13 +98,13 @@ const registerAppMenu = (mainWindow) => {
             focusedWindow && focusedWindow.toggleDevTools();
           },
         },
-        {
-          label: '访问官网',
-          click() {
-            const url = 'https://chat2db.opensource.alibaba.com/';
-            shell.openExternal(url);
-          },
-        },
+        // {
+        //   label: '访问官网',
+        //   click() {
+        //     const url = 'https://chat2db.opensource.alibaba.com/';
+        //     shell.openExternal(url);
+        //   },
+        // },
         // {
         //   label: '关于',
         //   role: 'about', // about （关于），此值只针对 Mac  OS X 系统
