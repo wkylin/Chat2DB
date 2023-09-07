@@ -47,7 +47,7 @@ const mockUrl = 'https://yapi.alibaba.com/mock/1000160';
 const desktopServiceUrl = `http://127.0.0.1:${__APP_PORT__ || '10824'}`;
 
 // 非桌面端的服务器地址
-const prodServiceUrl = 'http://60.204.142.133:10824';
+const prodServiceUrl = 'https://qingyanx.com/chat2db';
 // const prodServiceUrl = location.origin;
 
 // 是否自定义了 _BaseURL || 是否为桌面端地址
